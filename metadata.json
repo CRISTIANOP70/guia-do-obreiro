@@ -1,0 +1,6 @@
+{
+  "name": "Guia Prático do Obreiro",
+  "description": "Um portal de estudo e ferramenta prática e interativa de treinamento para obreiros, líderes e pregadores cristãos com base no manual do obreiro, checklists de culto e guias de oratória.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
