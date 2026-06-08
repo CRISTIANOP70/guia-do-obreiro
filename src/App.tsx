@@ -3,7 +3,7 @@ import { STUDY_MODULES } from "./data/manual";
 import ManualModule from "./components/ManualModule";
 import Checklists from "./components/Checklists";
 import QAView from "./components/QAView";
-import KitPregador from "./components/KitPregador";
+import { Biblia } from "./pages/Biblia";
 import { BookOpen, CheckSquare, HelpCircle, Feather, Award, ShieldAlert, GraduationCap, CheckCircle, ChevronRight, RotateCcw, Printer, Share2, Sparkles, Moon, Sun, Lock, Mail, Clock, ExternalLink, Loader2, LogOut } from "lucide-react";
 import { motion, AnimatePresence } from "motion/react";
 import { supabase } from "./supabaseClient";
@@ -453,7 +453,7 @@ export default function App() {
                 { id: "study", label: "Manual de Capacitação", desc: "6 Módulos teóricos com quiz", icon: BookOpen },
                 { id: "checklists", label: "Checklist Dinâmico de Culto", desc: "Zele por cada detalhe da escala", icon: CheckSquare },
                 { id: "faq", label: "Pesquisar Dúvidas (QA)", desc: "Consulte as 30 diretrizes", icon: HelpCircle },
-                { id: "preacher", label: "Kit Completo do Pregador", desc: "Selo de Oratória e Esboçador", icon: Feather }
+                { id: "biblia", label: "Bíblia", desc: "Inserir e visualizar versículos", icon: BookOpen },
               ].map((tab) => {
                 const IconComp = tab.icon;
                 const isActive = activeTab === tab.id;
