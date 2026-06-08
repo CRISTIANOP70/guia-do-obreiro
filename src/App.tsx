@@ -582,15 +582,15 @@ export default function App() {
                 </motion.div>
               )}
 
-              {activeTab === "preacher" && (
+              {activeTab === "biblia" && (
                 <motion.div
-                  key="preacher-panel"
+                  key="biblia-panel"
                   initial={{ opacity: 0, y: 15 }}
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: -15 }}
                   transition={{ duration: 0.2 }}
                 >
-                  <KitPregador />
+                  <Biblia />
                 </motion.div>
               )}
             </AnimatePresence>
