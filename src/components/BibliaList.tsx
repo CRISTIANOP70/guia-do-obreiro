@@ -8,15 +8,9 @@ export const BibliaList: React.FC<{ refreshTrigger: number }> = ({ refreshTrigge
 
   const loadEntries = async () => {
     setError('');
-    const email = localStorage.getItem('obreiro_logged_email') || '';
-    if (!email) {
-      setError('Usuário não autenticado');
-      return;
-    }
     const { data, error: fetchError } = await supabase
       .from('biblia')
       .select('*')
-      .eq('email', email)
       .order('added_at', { ascending: false });
     if (fetchError) {
       setError(fetchError.message);
